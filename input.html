@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+
+        h1{
+            text-align: center;
+        }
+
+        #body{
+
+            height: auto;
+            width: 100%;
+        }
+
+        textarea{
+
+            height: auto;
+            width: inherit;
+            
+        }
+        
+        </style>
+
+
+
+    </head>
+    <body>
+
+        <h1>MY DIARY</h1>
+
+        <div id=body>
+
+            <form method="post" id="diaryForm">
+
+                <textarea id="diaryArea" name = "input"></textarea>
+
+            </form>
+
+                       
+        </div>
+
+        
+        <script type="text/javascript">
+
+            $('#diaryArea').bind('keyup', function(){
+                $('#diaryForm').submit();
+            });
+
+            $("#diaryForm").submit(function (event) {
+                event.preventDefault();
+            $.ajax({
+                type: "post",
+                dataType: "html",
+                url: 'diary.php',
+                data: $("#diaryForm").serialize(),  
+            });
+});
+    
+    
+        </script>
+        
+    </body>
+</html>
