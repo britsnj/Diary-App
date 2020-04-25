@@ -7,7 +7,7 @@
     $errors = array();
     
     
-    $link = mysqli_connect("shareddb-u.hosting.stackcp.net", "secret-diary-313333a05a", "n7vafey1d8", "secret-diary-313333a05a");
+    $link = mysqli_connect("shareddb-u.hosting.stackcp.net", "", "", "");
 
     if (mysqli_connect_error()) {    
       die ("Database Connection NOT Successful");
