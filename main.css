@@ -1,0 +1,50 @@
+<style type="text/css">
+
+            body{
+
+                margin: 0;
+                padding: 0;
+            }
+
+                      
+            .bgd-img {
+
+                
+                position: fixed;
+                top: 50;
+                height: 100%;
+                width: inherit;
+                z-index: -1;
+                
+            }
+
+                      
+
+            #title{
+
+                font-family: 'Aclonica', sans-serif;
+                text-align: center;
+                font-size: 4rem;
+                color: ivory;
+                padding-top: 25px;
+
+            }
+
+            #prompt{
+                color: ivory;
+            }
+
+            form{
+                color: ivory;
+            
+            }
+
+            #regLink, #logLink{
+
+                text-align: center;
+                margin-top: 50px;
+                font-weight: bold;
+            }
+
+            
+        </style>
